@@ -16,5 +16,6 @@ jobs:
         inputs:
           containerRegistry: 'docker'
           repository: 'samad09/auth:1'
-          command: 'buildAndPush'
-          Dockerfile: '**/Dockerfile'
+          command: 'build'
+          Dockerfile: './Dockerfile'
+          buildContext: '.'
